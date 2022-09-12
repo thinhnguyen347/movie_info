@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       },
       title: 'Movie Slide',
       theme: ThemeData(
-        fontFamily: 'Comfortaa',
+        fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

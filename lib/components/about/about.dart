@@ -21,10 +21,10 @@ class About extends StatelessWidget {
           children: [
             const SizedBox(height: 24),
             const Text(
-              "Cảm ơn mọi người đã trải nghiệm ứng dụng. Mọi góp ý cải thiện sản phẩm xin vui lòng liên hệ theo thông tin dưới đây:",
+              "Cảm ơn mọi người đã dành thời gian trải nghiệm ứng dụng! Rất mong nhận được góp ý của mọi người để cải thiện sản phẩm tốt hơn nữa.",
               style: TextStyle(color: Colors.white),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 24),
             Spring.slide(
               springController: springController,
               slideType: SlideType.slide_in_left,

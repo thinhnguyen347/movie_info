@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:movie_slide/components/about/about.dart';
 import 'package:movie_slide/components/popular/popular_view.dart';
 import 'package:movie_slide/components/top_rated/top_rated_view.dart';
 import 'package:movie_slide/components/upcoming/upcoming_view.dart';
@@ -17,7 +18,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     Text('Popular'),
     Text('Top Rated'),
     Text('Upcoming'),
-    Text('Watched')
+    Text('About')
   ];
 
   @override
@@ -94,11 +95,11 @@ tabBarView({required controller}) {
   return Expanded(
       child: TabBarView(
     controller: controller,
-    children: [
-      const PopularView(),
-      const TopRatedMovies(),
-      const UpcomingMovies(),
-      Container(color: Colors.pink.withAlpha(30)),
+    children: const [
+      PopularView(),
+      TopRatedMovies(),
+      UpcomingMovies(),
+      About(),
     ],
   ));
 }

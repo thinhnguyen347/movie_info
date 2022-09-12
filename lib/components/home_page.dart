@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:movie_slide/components/about/about.dart';
 import 'package:movie_slide/components/popular/popular_view.dart';
 import 'package:movie_slide/components/top_rated/top_rated_view.dart';
@@ -25,7 +24,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     tabController = TabController(vsync: this, length: tabs.length);
-    initialization();
   }
 
   @override
@@ -66,11 +64,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       ],
     ));
   }
-}
-
-void initialization() async {
-  await Future.delayed(const Duration(seconds: 5))
-      .then((value) => {FlutterNativeSplash.remove()});
 }
 
 tabBar({required controller, required List<Widget> tabs}) {

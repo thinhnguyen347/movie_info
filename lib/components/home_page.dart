@@ -14,10 +14,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   late TabController tabController;
   List<Widget> tabs = const [
-    Text('Popular'),
-    Text('Top Rated'),
-    Text('Upcoming'),
-    Text('About')
+    Text('Phổ biến'),
+    Text('Đánh giá cao'),
+    Text('Sắp chiếu'),
+    Text('Liên hệ')
   ];
 
   @override
@@ -79,7 +79,7 @@ tabBar({required controller, required List<Widget> tabs}) {
       unselectedLabelColor: Colors.white38,
       isScrollable: true,
       labelStyle: const TextStyle(
-          fontFamily: 'Comfortaa', fontSize: 24, fontWeight: FontWeight.bold),
+          fontFamily: 'Poppins', fontSize: 24, fontWeight: FontWeight.bold),
     ),
   );
 }

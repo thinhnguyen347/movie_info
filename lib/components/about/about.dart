@@ -47,7 +47,17 @@ class About extends StatelessWidget {
                 withFade: true,
                 animDuration: const Duration(milliseconds: 2000),
                 child: infoBar(
-                    title: "Số điện thoại", content: authorInfo["phone"]))
+                    title: "Số điện thoại", content: authorInfo["phone"]),
+            ),
+            const SizedBox(height: 10),
+            Spring.slide(
+              springController: springController,
+              slideType: SlideType.slide_in_left,
+              withFade: true,
+              animDuration: const Duration(milliseconds: 2500),
+              child: infoBar(
+                  title: "App version", content: '1.0.0'),
+            )
           ],
         ));
   }

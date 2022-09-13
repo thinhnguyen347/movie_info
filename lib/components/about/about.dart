@@ -9,7 +9,7 @@ class About extends StatelessWidget {
     final authorInfo = {
       "name": "Thịnh Nguyễn",
       "email": "nd.thinh91@gmail.com",
-      "phone": "098401891"
+      "phone": "0984018891"
     };
 
     final SpringController springController =

@@ -7,7 +7,7 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final authorInfo = {
-      "name": "Nguyen Duc Thinh",
+      "name": "Thịnh Nguyễn",
       "email": "nd.thinh91@gmail.com",
       "phone": "098401891"
     };
